@@ -21,7 +21,7 @@ redirect_to ad
     @ad = Ad.find(params[:id])
 
 @ad.update_attributes(ad_params)
-redirect_to "/ads/#{@ad.id}"
+redirect_to ad_url(@ad)
    end
    def destroy
 @ad = Ad.find(params[:id])
