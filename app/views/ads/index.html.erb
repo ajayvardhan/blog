@@ -1,0 +1,10 @@
+<html>
+<body>
+<ul>
+<% for ad in @ads %>
+<li><%= link_to ad.name, ad %>
+[<%= link_to 'Destroy', ad, method: :delete %>]</li>
+<% end %>
+</ul>
+</body>
+</html>

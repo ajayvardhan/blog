@@ -1,0 +1,6 @@
+<h1>Update Ad</h1>
+<%= form_for(@ad,:url => {:action => 'update'}) do |f| %>
+  <p><b>Name:</b><%= f.text_field :name %></p>
+  <p><b>Description:</b><%= f.text_area :description %></p>
+  <p><%= f.submit :update %> </p>
+  <% end %>
